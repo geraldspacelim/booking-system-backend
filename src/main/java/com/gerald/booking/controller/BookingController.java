@@ -18,7 +18,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 // allow cross-origin sharing from frontend
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://booking-system-client.vercel.app/")
 @RestController
 @RequestMapping(path = "api/v1")
 @RequiredArgsConstructor

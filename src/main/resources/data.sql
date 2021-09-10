@@ -1,0 +1,21 @@
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A1');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A2');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A3');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A4');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A5');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A6');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A7');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A8');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A9');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A10');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A11');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A12');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A13');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A14');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A15');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A16');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A17');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A18');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A19');
+insert into booking (first_name, last_name, email, seat_number) values (NULL, NULL, NULL, 'A20');
+

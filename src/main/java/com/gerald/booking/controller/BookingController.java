@@ -18,7 +18,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 // allow cross-origin sharing from frontend
-@CrossOrigin(origins = "https://booking-system-client.vercel.app/")
+@CrossOrigin(origins = "http://209.97.175.18/")
 @RestController
 @RequestMapping(path = "api/v1")
 @RequiredArgsConstructor
@@ -49,8 +49,8 @@ public class BookingController {
     @GetMapping("/isBooked/{id}")
     public ResponseEntity<Object> isBooked(@PathVariable String id) {
         // rate limiter to check for spam request
-        Boolean isNotSpam = rateLimiter.tryAcquire();
-        if (isNotSpam) {
+//        Boolean isNotSpam = rateLimiter.tryAcquire();
+//        if (isNotSpam) {
             try {
                 Boolean seat_number_response = bookingService.getSeatStatus(id);
                 return ResponseHandler.generateResponse("Get Status Successful!", HttpStatus.OK, seat_number_response);
@@ -59,9 +59,9 @@ public class BookingController {
             } catch (IllegalStateException e) {
                 throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, e.getMessage());
             }
-        } else {
-            throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests, please try again later");
-        }
+//        } else {
+//            throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests, please try again later");
+//        }
     }
 
     // get request to find all seats' statuses to update frontend

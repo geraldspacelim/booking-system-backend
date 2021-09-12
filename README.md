@@ -40,6 +40,7 @@ insert into booking (first_name, last_name, email, seat_number) values (NULL, NU
 
 ##  Architecture 
 
+<img src="./screenshots/architecture backend.PNG" width="400" height="500">
 
 
 

@@ -2,7 +2,7 @@
 
 The Booking System backend acts as a REST Controller to facilitate requests from the frontend and interact with the database. This application is built using Spring Boot and Maven that provides dependency management. I have also written some Junit testing for performing CRUD operations on the database and testing the REST controller Spring MockMVC. I have also implemented basic security features such such as rate limiting on the REST Controller to prevent malicious attacks. Lastly, I have also implemented Optismitic locking to handle concurrency scenarios and data inconsistency. 
 
-This application is built using the MVC framework and its JAR file is hosted on my Digital Ocean Server.
+This application is built using the MVC framework and its JAR file is hosted on my Digital Ocean Server. For frontend write-up, click [here](https://github.com/geraldspacelim/booking-system-client)
 
 Disclaimer: It is my first time building a Spring Boot application
 
@@ -126,7 +126,7 @@ I have implemented a few Junit test on the Database and REST controllers (MockMV
 
 ### Controller Test
 
-<img src="./screenshots/rest controller test.PNG" width="300" height="150">
+<img src="./screenshots/rest controller test.PNG" width="350" height="150">
 
 ```GET /api/v1/findAllSeats```: **expect**: Status OK, **response**: Status OK   
 ```GET /api/v1/findAllSeats```: **expect** Status OK, **response**: Status OK   
@@ -134,7 +134,7 @@ I have implemented a few Junit test on the Database and REST controllers (MockMV
 
 ### Service Test
 
-<img src="./screenshots/service test.PNG" width="300" height="150">
+<img src="./screenshots/service test.PNG" width="350" height="150">
 
 ```assertEquals(true, bookingRepository.findBySeatNumber("A1").getIs_reserved());```: **expect**: true, **response**: true  
 ```assertEquals(true, seatStatus)```: **expect**: true, **response**: true  

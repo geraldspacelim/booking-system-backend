@@ -126,7 +126,7 @@ I have implemented a few Junit test on the Database and REST controllers (MockMV
 
 ### Controller Test
 
-<img src="./screenshots/rest controller test.PNG" width="350" height="150">
+<img src="./screenshots/rest controller test.PNG" width="350" height="100">
 
 ```GET /api/v1/findAllSeats```: **expect**: Status OK, **response**: Status OK   
 ```GET /api/v1/findAllSeats```: **expect** Status OK, **response**: Status OK   

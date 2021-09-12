@@ -126,13 +126,20 @@ I have implemented a few Junit test on the Database and REST controllers (MockMV
 
 ### Controller Test
 
+<img src="./screenshots/rest controller test.PNG" width="400" height="300">
+
 ```GET /api/v1/findAllSeats```: **expect**: Status OK, **response**: Status OK   
 ```GET /api/v1/findAllSeats```: **expect** Status OK, **response**: Status OK   
 ```PUT /api/v1/bookSeat```: **expect** Status OK, **response**: Status OK  
 
 ### Service Test
-```assertEquals(true, bookingRepository.findBySeatNumber("A1").getIs_reserved());```: **expect**: true, **response**: true
-```assertEquals(true, seatStatus)```: **expect**: true, **response**: true
-```assertThat(allSeats).size().isEqualTo(20)```: **response**: ok
-```assertEquals(1, bookingItem.getVersion())```: **expect**: 1, **response**: 1
+
+<img src="./screenshots/service test.PNG" width="400" height="300">
+
+```assertEquals(true, bookingRepository.findBySeatNumber("A1").getIs_reserved());```: **expect**: true, **response**: true  
+```assertEquals(true, seatStatus)```: **expect**: true, **response**: true  
+```assertThat(allSeats).size().isEqualTo(20)```: **response**: ok  
+```assertEquals(1, bookingItem.getVersion())```: **expect**: 1, **response**: 1  
+
+
 

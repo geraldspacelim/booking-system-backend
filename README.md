@@ -38,5 +38,9 @@ insert into booking (first_name, last_name, email, seat_number) values (NULL, NU
 ...
 ```
 
+##  Architecture 
+
+
+
 
 

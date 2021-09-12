@@ -46,11 +46,13 @@ insert into booking (first_name, last_name, email, seat_number) values (NULL, NU
 
 The backend architecture follows that of the MVC pattern:
 
-**Client**: The client sends HTTP requests and receives responses directly to and from the REST controllers 
-**Controllers**: It is responsible for processing any incoming REST API, preparing and returning models and status entities. The @RestController annotation is used to mark the service classes 
-**Service**: It contains the business logic of the application and the @Service annotation is used to mark the service classes 
-**Repository**: It is responsible for storage, retrieval and seatch behavior which emulates a collection objects (e.g. model). I have written custom queries that better fit my use case. The @Repository annotation is used to mark the repository class
-**Model**: The model class represents the data object as public properties and business logic as methods. The @Entity is used to mark the Model class.
-**Response**: The Response Handler class is a custom response handler object that includes data, message and status code for better readability of responses called from the client. 
+**Client**: The client sends HTTP requests and receives responses directly to and from the REST controllers   
+**Controllers**: It is responsible for processing any incoming REST API, preparing and returning models and status entities. The @RestController annotation is used to mark the service classes  
+**Service**: It contains the business logic of the application and the @Service annotation is used to mark the service classes  
+**Repository**: It is responsible for storage, retrieval and seatch behavior which emulates a collection objects (e.g. model). I have written custom queries that better fit my use case. The @Repository annotation is used to mark the repository class  
+**Model**: The model class represents the data object as public properties and business logic as methods. The @Entity is used to mark the Model class.  
+**Response**: The Response Handler class is a custom response handler object that includes data, message and status code for better readability of responses called from the client.  
+
+
 
 

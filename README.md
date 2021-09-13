@@ -53,7 +53,7 @@ The backend architecture follows that of the MVC pattern:
 **Client**: The client sends HTTP requests and receives responses directly to and from the REST controllers   
 **Controllers**: It is responsible for processing any incoming REST API, preparing and returning models and status entities. The @RestController annotation is used to mark the service classes  
 **Service**: It contains the business logic of the application and the @Service annotation is used to mark the service classes  
-**Repository**: It is responsible for storage, retrieval and seatch behavior which emulates a collection objects (e.g. model). I have written custom queries that better fit my use case. The @Repository annotation is used to mark the repository class  
+**Repository**: It is responsible for storage, retrieval and search behavior which emulates a collection objects (e.g. model). I have written custom queries that better fit my use case. The @Repository annotation is used to mark the repository class  
 **Model**: The model class represents the data object as public properties and business logic as methods. The @Entity is used to mark the Model class.  
 **Response**: The Response Handler class is a custom response handler object that includes data, message and status code for better readability of responses called from the client.  
 
@@ -66,7 +66,7 @@ REST APIS of ```GET, POST, PUT``` are implemented:
 **GET** ```/api/v1/findAllSeats``` - returns the statuses of all seats     
 **POST** ```/api/v1/sendConfirmationEmail``` - if successful booking, sends a confirmation email to the user  
 
-Error Codes: 
+Error Codes:   
 **200** OK + success message   
 **404** NOT FOUND + error message   
 **409** CONFICT + error message   
